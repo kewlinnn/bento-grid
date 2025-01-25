@@ -46,11 +46,12 @@ h3 {
   grid-template-columns:  1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 0.5fr 1fr 0.5fr;
   height: 800px;
-  width: 1020px;
+  max-width: 1020px;
   gap: 25px;
 }
 .grid-container div {
   border-radius: 10px;
+  padding: 20px;
   
   display: flex;
   flex-direction: column;
@@ -66,23 +67,19 @@ p {
   justify-content: center;
   align-items: center;
 }
-  #cell-one h2 {
-    margin-left: 20px;
-  }
   #cell-one em {
     color: hsl(256, 67%, 59%)
   }
   #cell-one img {
     margin-top: 20px;
     width: 170px;
+    margin-right: 20px;
   }
 #cell-two {
   grid-area: B;
   background-color: hsl(256, 67%, 59%);
   color: hsl(0, 0%, 100%);
   text-align: center;
-  margin: 0;
-  padding: 0;
 
   justify-content: center;
   align-items: center;
@@ -103,50 +100,37 @@ p {
   justify-content: space-evenly;
   overflow: hidden;
 }
-  #cell-three > * {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
   #cell-three img {
     width: 300px;
   }
 #cell-four {
   grid-area: D;
   background-color: hsl(39, 100%, 71%);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
   #cell-four img {
     width: 100%;
-    padding: 15px;
+
   }
-  #cell-four h2 {
-    margin: 20px;
-  }
+  
 #cell-five {
   grid-area: E;
   background-color: hsl(0, 0%, 100%);
   overflow: hidden;
   justify-content: space-evenly;
+  padding: 20px;
 }
-  #cell-five > * {
-    margin-left: 20px;
-  }
   #cell-five img {
     width: 265px;
   }
-
 #cell-six {
   grid-area: F;
   background-color: hsl(39, 100%, 71%);
   overflow: hidden;
 }
-  #cell-six > * {
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 20px;
-  }
   #cell-six img {
+    margin-top: 20px;
     width: 180px;
   }
 #cell-seven {
@@ -154,7 +138,6 @@ p {
   background-color: hsl(0, 0%, 100%);
   overflow: hidden;
   justify-content: center;
-  padding: 20px;
   justify-content: space-evenly;
 }
   #cell-seven img {
@@ -166,12 +149,11 @@ p {
   flex-direction: row;
   color: hsl(0, 0%, 100%);
   font-weight: 400;
-  padding: 20px;
 
   align-items: center;
 }
   #cell-eight img {
-    width: 250px;
+    height: 100%;
   }
 .attribution { 
   font-size: 11px;
@@ -182,7 +164,7 @@ p {
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   #bento-grid {
     width: 100%;
     height: max-content;
