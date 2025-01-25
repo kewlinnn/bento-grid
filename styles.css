@@ -199,6 +199,9 @@ p {
       width: 100%;
       margin-bottom: 20px;
     }
+  #cell-six {
+    padding-bottom: 0;
+  }
     #cell-six img {
       width: 230px;
     }
