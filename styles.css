@@ -31,8 +31,10 @@ h3 {
 #bento-grid {
   padding: 5px;
   margin: 10px;
-  scroll: auto;
-  min-height: max-content;
+  overflow: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .grid-container {
   display: grid;
@@ -103,6 +105,7 @@ p {
 }
   #cell-three > * {
     margin-left: 20px;
+    margin-right: 20px;
   }
   #cell-three img {
     width: 300px;
@@ -114,7 +117,8 @@ p {
   align-items: center;
 }
   #cell-four img {
-    width: 180px;
+    width: 100%;
+    padding: 15px;
   }
   #cell-four h2 {
     margin: 20px;
@@ -140,6 +144,7 @@ p {
   #cell-six > * {
     margin-left: 20px;
     margin-top: 20px;
+    margin-right: 20px;
   }
   #cell-six img {
     width: 180px;
@@ -172,6 +177,7 @@ p {
   font-size: 11px;
   text-align: center;
   width: 100%;
+  padding: 20px;
   margin-top: auto;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
