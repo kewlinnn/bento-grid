@@ -173,3 +173,28 @@ p {
   padding: 10px;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 375px) {
+  #bento-grid {
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+  }
+ .grid-container {
+  margin: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "B"
+    "E"
+    "F"
+    "C"
+    "H"
+    "G"
+    "A"
+    "D";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  height: fit-content;
+ }   
+}
